@@ -6,42 +6,68 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Dowlan</title>
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar">
+    <!-- NAVBAR -->
+    <nav>
+        <div class="navbar">
             <p class="logo">
-                <span>Just</span>Travel
+                <img src="./img/logo.svg" alt="">
             </p>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Product</a></li>
                 <li><a href="#">About</a></li>
+                <li class="login-navbar"><a href="#"><i class="fa fa-search"></i></a></li>
             </ul>
-        </nav>
-        <h1 class="big-title translate" data-speed="-0.1">
-            Travel Around The World.
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <div class="container">
+        <h1 class="big-title" data-speed="-0.1">
+            Travel Around The World With Us.
         </h1>
+        <div class="button-hero">
+            <button class="btn-primary">Get Started</button>
+            <button class="btn-secondary">Find Inspiration</button>
+        </div>
         <img src="./img/sky.jpg" alt="" class="sky">
         <img src="./img/plane.png" alt="" class="plane zoom translate" data-speed="0.1">
         <img src="./img/cloud.png" alt="" class="cloud1 translate" data-speed="-0.5">
+        <img src="./img/cloud.png" alt="" class="cloud2 translate" data-speed="-0.5">
+        <img src="./img/cloud.png" alt="" class="cloud3 translate" data-speed="-0.5">
     </div>
 
+
+    <!-- SECTION -->
     <section>
         <div class="shadow"></div>
-        <div class="content-container">
-            <h3 class="title-small">
-                About
-            </h3>
-            <p class="des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Eius, veritatis maiores sapiente voluptatum nostrum ullam? 
-                Nulla libero, culpa fugit sunt, quasi accusamus vel incidunt 
-                natus sed est quas fuga hic ducimus doloremque provident labore 
-                laboriosam, nihil eos. Quis nostrum tenetur architecto excepturi quam!
-            </p>
+        <div class="search-float-container">
+            <div class="search-bar">
+                <div class="location-con">
+                    <p class="search-title">Location</p>
+                    <p class="search-choices">Bali, Indonesia <span><img src="./img/arrow.svg" alt=""></span></p>
+                </div>
+                <div class="date-con">
+                    <p class="search-title">Date</p>
+                    <p class="search-choices">Mon, 14 June <span><img src="./img/arrow.svg" alt=""></span></p>
+                </div>
+                <div class="people-con">
+                    <p class="search-title">People</p>
+                    <p class="search-choices">4 People <span><img src="./img/arrow.svg" alt=""></span></p>
+                </div>
+                <div class="button-con">
+                    <button class="btn-primary">Search Travel</button>
+                </div>
+            </div>
         </div>
+        
     </section>
 
     <script src="app.js"></script>

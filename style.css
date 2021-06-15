@@ -6,34 +6,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  margin: auto;
+nav {
   max-width: 1440px;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container .big-title {
-  position: absolute;
-  font-size: 56px;
-  line-height: 4rem;
-  top: calc(50% - 1rem);
   width: 100%;
-  text-align: center;
-  color: white;
-  z-index: 2;
+  margin: auto;
 }
 
-.container .navbar {
+nav .navbar {
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.05);
   z-index: 10;
+  max-width: 1440px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,21 +27,30 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
+  height: 80px;
 }
 
-.container .navbar .logo {
-  margin-left: 10%;
+nav .navbar .logo {
+  width: 170px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-weight: 700;
 }
 
-.container .navbar .logo span {
+nav .navbar .logo span {
   font-weight: 500;
 }
 
-.container .navbar ul {
-  margin-right: 10%;
+nav .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,55 +61,313 @@
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  height: 100%;
 }
 
-.container .navbar ul li {
-  margin-left: 50px;
+nav .navbar ul li {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2px;
+  height: 100%;
+  width: 120px;
+  overflow: hidden;
 }
 
-.container .navbar ul li a {
+nav .navbar ul li a {
+  margin: auto;
   text-decoration: none;
   color: white;
 }
 
+nav .navbar ul li::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  background-color: #FFD600;
+  z-index: 20;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .navbar ul li:hover::after {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  width: 100%;
+}
+
+nav .navbar ul .login-navbar {
+  background-color: #FFD600;
+}
+
+.container {
+  margin: auto;
+  max-width: 1440px;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 5;
+}
+
+.container .big-title {
+  position: absolute;
+  font-size: 48px;
+  font-family: 'Pridi', serif;
+  line-height: 4rem;
+  font-weight: 500;
+  top: calc(50% - 4rem);
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 6;
+}
+
+.container .button-hero {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: calc(50% + 20px);
+  z-index: 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .button-hero .btn-primary {
+  cursor: pointer;
+  width: 182px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #ffd600;
+  border: none;
+  color: #fff;
+  margin: 10px;
+  font-weight: 600;
+}
+
+.container .button-hero .btn-secondary {
+  cursor: pointer;
+  width: 182px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: rgba(255, 214, 0, 0);
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 10px;
+}
+
 .container .sky {
+  cursor: none;
   position: absolute;
   top: 0;
   right: 0;
 }
 
 .container .plane {
+  cursor: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 600px;
-  top: calc(50% - 150px);
+  top: calc(50% - 200px);
   position: absolute;
   z-index: 3;
 }
 
 .container .cloud1 {
+  cursor: none;
   position: absolute;
   width: 1500px;
+  height: 2000px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: auto;
   right: 0;
   top: 0;
   z-index: 1;
 }
 
+.container .cloud2 {
+  cursor: none;
+  position: absolute;
+  width: 1500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  right: 500px;
+  top: 100px;
+  z-index: 1;
+}
+
+.container .cloud3 {
+  cursor: none;
+  position: absolute;
+  width: 1000px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  right: -200px;
+  top: 300;
+  z-index: 1;
+}
+
 section {
+  max-width: 1440px;
   width: 100%;
   margin: auto;
-  height: 100vh;
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1440px;
   position: relative;
+}
+
+section .search-float-container {
+  width: 100%;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .search-float-container .search-bar {
+  height: 150px;
+  border-radius: 10px;
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+  z-index: 10;
+  position: absolute;
+  background-color: #fff;
+  bottom: 95%;
+  -webkit-box-shadow: 0 10px 50px rgba(167, 166, 166, 0.2);
+          box-shadow: 0 10px 50px rgba(167, 166, 166, 0.2);
+}
+
+section .search-float-container .search-bar .location-con {
+  height: 100%;
+}
+
+section .search-float-container .search-bar .location-con .search-title {
+  height: 50%;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+section .search-float-container .search-bar .location-con .search-choices {
+  height: 50%;
+  padding-bottom: 40px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section .search-float-container .search-bar .location-con .search-choices span {
+  margin-left: 5px;
+}
+
+section .search-float-container .search-bar .date-con {
+  height: 100%;
+}
+
+section .search-float-container .search-bar .date-con .search-title {
+  height: 50%;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+section .search-float-container .search-bar .date-con .search-choices {
+  height: 50%;
+  padding-bottom: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section .search-float-container .search-bar .date-con .search-choices span {
+  margin-left: 5px;
+}
+
+section .search-float-container .search-bar .people-con {
+  height: 100%;
+}
+
+section .search-float-container .search-bar .people-con .search-title {
+  height: 50%;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+section .search-float-container .search-bar .people-con .search-choices {
+  height: 50%;
+  padding-bottom: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+section .search-float-container .search-bar .people-con .search-choices span {
+  margin-left: 5px;
+}
+
+section .search-float-container .search-bar .button-con {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .search-float-container .search-bar .button-con .btn-primary {
+  font-weight: 600;
+  cursor: pointer;
+  width: 182px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: #ffd600;
+  border: none;
+  color: #fff;
+  margin: 10px;
 }
 
 section .content-container {
@@ -149,7 +399,7 @@ section .shadow {
   left: 0;
   width: 100%;
   height: 400px;
-  z-index: 20;
+  z-index: 2;
   background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(transparent));
   background: linear-gradient(to top, #fff, transparent);
 }

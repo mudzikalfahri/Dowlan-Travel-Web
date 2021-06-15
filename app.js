@@ -1,5 +1,6 @@
 const translate = document.querySelectorAll('.translate');
-const zoom = document.querySelectorAll('.zoom')
+const zoom = document.querySelectorAll('.zoom');
+const title = document.querySelector('.big-title');
 
 window.addEventListener('scroll', () => {
     let scroll = window.pageYOffset;
@@ -11,4 +12,5 @@ window.addEventListener('scroll', () => {
     zoom.forEach( element => {
         element.style.width = `${scroll/2 + 600}px`
     })
+    title.style.opacity = `${100/scroll}`
 })
