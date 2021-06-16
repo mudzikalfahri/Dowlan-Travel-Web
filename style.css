@@ -14,10 +14,12 @@ nav {
 
 nav .navbar {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0);
   z-index: 11;
   max-width: 1440px;
   width: 100%;
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,9 +918,157 @@ footer .footer {
   width: 80%;
   height: 100%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer .logo {
+  width: 700px;
 }
 
 footer .footer .logo img {
   width: 280px;
+}
+
+footer .footer .footer-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+footer .footer .footer-link .social .ft-title {
+  font-size: 18px;
+  color: #FAB810;
+}
+
+footer .footer .footer-link .social .ft-link {
+  margin-top: 15px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer .footer-link .social .ft-link p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #858585;
+}
+
+footer .footer .footer-link .social .ft-link p span {
+  margin-left: 10px;
+}
+
+footer .footer .footer-link .about .ft-title {
+  font-size: 18px;
+  color: #FAB810;
+}
+
+footer .footer .footer-link .about .ft-link {
+  margin-top: 15px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer .footer-link .about .ft-link p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #858585;
+}
+
+footer .footer .footer-link .product .ft-title {
+  font-size: 18px;
+  color: #FAB810;
+}
+
+footer .footer .footer-link .product .ft-link {
+  margin-top: 15px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer .footer-link .product .ft-link p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #858585;
+}
+
+footer .footer .footer-link .others .ft-title {
+  font-size: 18px;
+  color: #FAB810;
+}
+
+footer .footer .footer-link .others .ft-link {
+  margin-top: 15px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer .footer-link .others .ft-link p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #858585;
+}
+
+footer .made {
+  display: block;
+  height: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .made p {
+  color: #858585;
 }
 /*# sourceMappingURL=style.css.map */

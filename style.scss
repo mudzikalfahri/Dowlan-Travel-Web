@@ -13,10 +13,11 @@ nav{
     margin: auto;
     .navbar{
         position: fixed;
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: rgba(0, 0, 0, 0);
         z-index: 11;
         max-width: 1440px;
         width: 100%;
+        transition: background-color 0.5s linear;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -720,10 +721,106 @@ footer{
         width: 80%;
         height: 100%;
         margin: auto;
+        display: flex;
+        justify-content: space-between;
         .logo{
+            width: 700px;
             img{
                 width: 280px;
             }
+        }
+        .footer-link{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            .social{
+                .ft-title{
+                    font-size: 18px;
+                    color: #FAB810;
+                }
+                .ft-link{
+                    margin-top: 15px;
+                    height: 110px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        margin-bottom: 15px;
+                        font-size: 14px;
+                        color: #858585;
+                        span{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            .about{
+                .ft-title{
+                    font-size: 18px;
+                    color: #FAB810;
+                }
+                .ft-link{
+                    margin-top: 15px;
+                    height: 110px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        margin-bottom: 15px;
+                        font-size: 14px;
+                        color: #858585;
+                    }
+                }
+            }
+            .product{
+                .ft-title{
+                    font-size: 18px;
+                    color: #FAB810;
+                }
+                .ft-link{
+                    margin-top: 15px;
+                    height: 110px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        margin-bottom: 15px;
+                        font-size: 14px;
+                        color: #858585;
+                    }
+                }
+            }
+            .others{
+                .ft-title{
+                    font-size: 18px;
+                    color: #FAB810;
+                }
+                .ft-link{
+                    margin-top: 15px;
+                    height: 110px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        margin-bottom: 15px;
+                        font-size: 14px;
+                        color: #858585;
+                    }
+                }
+            }
+        }
+        
+    }
+    .made{
+        display: block;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: #858585;
         }
     }
 }
