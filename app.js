@@ -16,10 +16,10 @@ window.addEventListener('scroll', () => {
 
 $(window).on("scroll", function(){
     if ( $(window).scrollTop() ){
-        $('.navbar').css('background-color', 'rgba(0, 0, 0, 0.4)');
+        $('.navbar').css('background-color', 'rgba(0, 0, 0, 0.3)');
     }
     else {
-        $('.navbar').css('background-color', 'rgba(0, 0, 0, 0)');
+        $('.navbar').css('background-color', 'rgba(0, 0, 0, 0.02)');
     }
 });
 

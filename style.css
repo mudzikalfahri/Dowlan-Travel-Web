@@ -14,7 +14,7 @@ nav {
 
 nav .navbar {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.02);
   z-index: 11;
   max-width: 1440px;
   width: 100%;
@@ -1070,5 +1070,10 @@ footer .made {
 
 footer .made p {
   color: #858585;
+}
+
+footer .made p i {
+  margin-right: 5px;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */
